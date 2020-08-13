@@ -4,7 +4,9 @@ const tasks = (...arr) => arr.filter((t) => t).join(' && ');
 
 module.exports = {
   hooks: {
-    'pre-commit': disablePreCommitValidate ? undefined : tasks('lint-staged', 'jest'),
+    'pre-commit': disablePreCommitValidate
+      ? undefined
+      : tasks('lint-staged', 'npm run check-types', 'jest'),
     'commit-msg': 'npx commitlint -E HUSKY_GIT_PARAMS',
   },
 };
