@@ -9,17 +9,21 @@
 
 ## Features
 
-- Hover to preview and jump between footnote reference and content by <kbd>cmd</kbd> / <kbd>ctrl</kbd> + <kbd>click</kbd>.
-  ![](assets/jump-between.gif)
+Hover to preview and jump between footnote reference and content by <kbd>cmd</kbd> / <kbd>ctrl</kbd> + <kbd>click</kbd>.
 
-- Command for inserting new footnote.
-  ![](assets/insert-footnote.gif)
+![](assets/jump-between.gif)
 
-- Create content for a footnote reference by <kbd>cmd</kbd> / <kbd>ctrl</kbd> + <kbd>click</kbd>.
-  ![](assets/click-add-footnote.gif)
+Command for inserting new footnote.
 
-- Render footnotes in the built-in markdown preview.
-  ![](assets/preview.png)
+![](assets/insert-footnote.gif)
+
+Create content for a footnote reference by <kbd>cmd</kbd> / <kbd>ctrl</kbd> + <kbd>click</kbd>.
+
+![](assets/click-add-footnote.gif)
+
+Render footnotes in the built-in markdown preview.
+
+![](assets/preview.png)
 
 ### TODO
 
@@ -45,3 +49,7 @@
 
 - [Markdown Footnotes](https://github.com/mjbvz/vscode-markdown-footnotes)
 - [Markdown Memo](https://github.com/svsool/vscode-memo)
+
+## Changelog
+
+See changelog [here](./CHANGELOG.md).

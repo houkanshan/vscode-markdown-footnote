@@ -2,8 +2,8 @@
   "name": "vscode-markdown-footnote",
   "displayName": "Markdown Footnote",
   "publisher": "houkanshan",
-  "description": "Better interaction for markdown footnote in editor",
-  "version": "0.0.3",
+  "description": "Support markdown footnote in VSCode editor",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.47.0"
   },
