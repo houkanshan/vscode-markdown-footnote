@@ -1,4 +1,7 @@
-# VSCode Markdown Footnote
+<p align="center" style="margin: 0">
+  <a href="https://marketplace.visualstudio.com/items?itemName=houkanshan.vscode-markdown-footnote" ><img src="./assets/markdown-footnote.png" alt="VSCode Markdown Footnote" width="80" /></a>
+</p>
+<h1 align="center" style="margin-top: 0">VSCode Markdown Footnote</h1>
 
 [![](https://vsmarketplacebadge.apphb.com/version-short/houkanshan.vscode-markdown-footnote.svg)](https://marketplace.visualstudio.com/items?itemName=houkanshan.vscode-markdown-footnote)
 [![](https://vsmarketplacebadge.apphb.com/installs/houkanshan.vscode-markdown-footnote.svg)](https://marketplace.visualstudio.com/items?itemName=houkanshan.vscode-markdown-footnote)
@@ -28,6 +31,7 @@ Render footnotes in the built-in markdown preview.
 ### TODO
 
 - Support multiline footnote content.
+- Support `pandoc-citeproc` format [citations](https://crsh.github.io/papaja_man/writing.html#citations)
 
 ## Contributing
 
