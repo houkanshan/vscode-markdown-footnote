@@ -3,7 +3,7 @@
   "displayName": "Markdown Footnote",
   "publisher": "houkanshan",
   "description": "Support markdown footnote in VSCode editor",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.47.0"
   },
