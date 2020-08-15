@@ -7,10 +7,7 @@ const mdLangSelector = { language: 'markdown' };
 
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
-    vscode.commands.registerCommand(
-      'vscode-markdown-footnotes-plus.insertFootnote',
-      insertFootnote,
-    ),
+    vscode.commands.registerCommand('vscode-markdown-footnote.insertFootnote', insertFootnote),
     vscode.languages.registerDocumentLinkProvider(mdLangSelector, new FootnoteLinkProvider()),
     vscode.languages.registerHoverProvider(mdLangSelector, new FootnoteHoverProvider()),
   );

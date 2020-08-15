@@ -1,35 +1,44 @@
 {
-  "name": "vscode-markdown-footnotes-plus",
-  "displayName": "vscode-markdown-footnotes-plus",
-  "description": "Better interaction for markdown footnotes in editor",
-  "version": "0.1.0",
+  "name": "vscode-markdown-footnote",
+  "displayName": "Markdown Footnote",
+  "publisher": "houkanshan",
+  "description": "Better interaction for markdown footnote in editor",
+  "version": "0.0.1",
   "engines": {
     "vscode": "^1.47.0"
   },
-  "keywords": ["markdown", "footnote", "preview", "notes", "note taking"],
-  "categories": ["Programming Languages"],
+  "author": "Mai Hou <houkanshan@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/houkanshan/vscode-markdown-footnote"
+  },
+  "bugs": {
+    "url": "https://github.com/houkanshan/vscode-markdown-footnote/issues"
+  },
+  "icon": "assets/markdown-footnote.png",
+  "keywords": ["markdown", "footnote", "footnotes", "preview", "notes", "note taking"],
+  "categories": ["Other"],
   "activationEvents": ["onLanguage:markdown"],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "vscode-markdown-footnotes-plus.insertFootnote",
+        "command": "vscode-markdown-footnote.insertFootnote",
         "title": "Insert a footnote"
       }
-    ]
+    ],
+    "markdown.markdownItPlugins": true
   },
   "lint-staged": {
     "*.ts": ["eslint --fix"]
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
     "lint": "eslint src --ext ts",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
+    "check-types": "tsc --noEmit -p ./",
     "test": "jest",
     "test:watch": "jest --watch",
-    "check-types": "tsc --noEmit -p ./"
+    "publish": "npx vsce publish"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",

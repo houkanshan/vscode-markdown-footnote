@@ -34,7 +34,7 @@ export default class FootnoteLinkProvider implements vscode.DocumentLinkProvider
         const refLink = new vscode.DocumentLink(
           refRange,
           vscode.Uri.parse(
-            `command:vscode-markdown-footnotes-plus.insertFootnote?${encodeURIComponent(
+            `command:vscode-markdown-footnote.insertFootnote?${encodeURIComponent(
               JSON.stringify({ footnoteName }),
             )}`,
           ),

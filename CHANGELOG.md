@@ -1,9 +1,5 @@
 # Change Log
 
-All notable changes to the "vscode-markdown-footnotes-plus" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
+## 0.1.0 - August 14, 2020
 
 - Initial release
