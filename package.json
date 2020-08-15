@@ -3,7 +3,7 @@
   "displayName": "Markdown Footnote",
   "publisher": "houkanshan",
   "description": "Better interaction for markdown footnote in editor",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.47.0"
   },
@@ -25,7 +25,7 @@
     "commands": [
       {
         "command": "vscode-markdown-footnote.insertFootnote",
-        "title": "Insert a footnote"
+        "title": "Insert a Footnote"
       }
     ],
     "markdown.markdownItPlugins": true
@@ -38,7 +38,8 @@
     "check-types": "tsc --noEmit -p ./",
     "test": "jest",
     "test:watch": "jest --watch",
-    "publish": "npx vsce publish"
+    "publish": "npx vsce publish",
+    "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
