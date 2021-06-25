@@ -3,6 +3,18 @@ import createRangeFromFootnoteMatch from '../utils/createRangeFromFootnoteMatch'
 import createUriForRange from '../utils/createUriForRange';
 import createRefContentPairs from '../utils/createRefContentPairs';
 
+const previewLength = 18;
+function getRefPreviewText(document: vscode.TextDocument, refRange: vscode.Range) {
+  const start = new vscode.Position(
+    refRange.start.line,
+    Math.max(0, refRange.start.character - previewLength));
+  const end = new vscode.Position(
+    refRange.end.line,
+    Math.max(0, refRange.end.character + previewLength));
+  const text = document.getText(new vscode.Range(start, end));
+  return `...${text}...`;
+}
+
 export default class FootnoteLinkProvider implements vscode.DocumentLinkProvider {
   public provideDocumentLinks(document: vscode.TextDocument): vscode.DocumentLink[] {
     const results: vscode.DocumentLink[] = [];
@@ -30,7 +42,7 @@ export default class FootnoteLinkProvider implements vscode.DocumentLinkProvider
           contentRange,
           createUriForRange(document, refRange),
         );
-        contentLink.tooltip = 'Jump up';
+        contentLink.tooltip = getRefPreviewText(document, refRange);
         results.push(contentLink);
       } else {
         // No match, a click will insert a new foot note.

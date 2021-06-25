@@ -2,7 +2,7 @@
 import { matchAll, footnoteRefRegex, footnoteContentRegex } from '../../utils';
 
 describe('utils', () => {
-  it('RegEx', () => {
+  it('RegExp should work', () => {
     const text = [
       'He was involved in the development of the web feed format RSS,[^3] ',
       'the Markdown publishing format,[^4] the organization Creative Commons,[^LessigLawrence] ',

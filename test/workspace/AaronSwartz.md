@@ -1,15 +1,18 @@
 > From https://en.wikipedia.org/wiki/Aaron_Swartz
 
-Aaron Hillel Swartz (November 8, 1986 – January 11, 2013) was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. He was involved in the development of the web feed format RSS,[^3] the Markdown publishing format,[^4] the organization Creative Commons,[^lessig] and the website framework web.py,[^6] and was a co-founder of the social news site Reddit. He was given the title of co-founder of Reddit by Y Combinator owner Paul Graham after the formation of Not a Bug, Inc. (a merger of Swartz's project Infogami and Redbrick Solutions,[^7] a company run by Alexis Ohanian and Steve Huffman).
+# Aaron Swartz
 
-Swartz's work also focused on civic awareness and activism.[^8][^9] He helped launch the Progressive Change Campaign Committee in 2009 to learn more about effective online activism. In 2010, he became a research fellow at Harvard University's Safra Research Lab on Institutional Corruption, directed by Lawrence Lessig.[^10][^11] He founded the online group Demand Progress, known for its campaign against the Stop Online Piracy Act.
+Aaron Hillel Swartz[^1] (November 8, 1986 – January 11, 2013) was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. He was involved in the development of the web feed format RSS,[^3] the Markdown publishing format,[^4] the organization Creative Commons,[^lessig] and the website framework web.py,[^6] and was a co-founder of the social news site Reddit. He was given the title of co-founder of Reddit by Y Combinator owner Paul Graham after the formation of Not a Bug, Inc. (a merger of Swartz's project Infogami and Redbrick Solutions,[^7] a company run by Alexis Ohanian and Steve Huffman).
 
-In 2011, Swartz was arrested by Massachusetts Institute of Technology (MIT) police on state breaking-and-entering charges, after connecting a computer to the MIT network in an unmarked and unlocked closet, and setting it to download academic journal articles systematically from JSTOR using a guest user account issued to him by MIT.[^12][^13] Federal prosecutors later charged him with two counts of wire fraud and eleven violations of the Computer Fraud and Abuse Act,[^14] carrying a cumulative maximum penalty of \$1 million in fines, 35 years in prison, asset forfeiture, restitution, and supervised release.[^15]
+Swartz's[^1] work also focused on civic awareness and activism.[^8][^9] He helped launch the Progressive Change Campaign Committee in 2009 to learn more about effective online activism. In 2010, he became a research fellow at Harvard University's Safra Research Lab on Institutional Corruption, directed by Lawrence Lessig.[^10][^11] He founded the online group Demand Progress, known for its campaign against the Stop Online Piracy Act.
 
-Swartz declined a plea bargain under which he would have served six months in federal prison. Two days after the prosecution rejected a counter-offer by Swartz, he was found dead in his Brooklyn apartment, where he had hanged himself.[^16][^17]
+In 2011, Swartz[^1] was arrested by Massachusetts Institute of Technology (MIT) police on state breaking-and-entering charges, after connecting a computer to the MIT network in an unmarked and unlocked closet, and setting it to download academic journal articles systematically from JSTOR using a guest user account issued to him by MIT.[^12][^13] Federal prosecutors later charged him with two counts of wire fraud and eleven violations of the Computer Fraud and Abuse Act,[^14] carrying a cumulative maximum penalty of \$1 million in fines, 35 years in prison, asset forfeiture, restitution, and supervised release.[^15]
+
+Swartz[^1] declined a plea bargain under which he would have served six months in federal prison. Two days after the prosecution rejected a counter-offer by Swartz, he was found dead in his Brooklyn apartment, where he had hanged himself.[^16][^17]
 
 In 2013, Swartz was inducted posthumously into the Internet Hall of Fame.[^18]
 
+[^1]: https://en.wikipedia.org/wiki/Aaron_Swartz
 [^3]: "RSS creator Aaron Swartz dead at 26". Harvard Magazine. January 14, 2013. Swartz helped create RSS—a family of Web feed formats used to publish frequently updated works (blog entries, news headlines, ...) in a standardized format—at the age of 14.
 
 [^4]: "Markdown". Aaron Swartz: The Weblog. March 19, 2004.
