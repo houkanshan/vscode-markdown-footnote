@@ -4,7 +4,7 @@
     "target": "es6",
     "esModuleInterop": true,
     "outDir": "out",
-    "lib": ["es2019"],
+    "lib": ["es2020"],
     "sourceMap": true,
     "rootDir": "src",
     "strict": true,
