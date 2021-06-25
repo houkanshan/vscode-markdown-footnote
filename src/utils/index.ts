@@ -2,11 +2,15 @@ import * as vscode from 'vscode';
 
 export const escapeForRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-export const footnoteRefRegex = /\[\^(\S+?)\](?!\:)/g;
-export const footnoteContentRegex = /^\[\^(\S+?)\](?=\: +)/gm;
+export const footnoteRefRegex = /\[\^(?<key>\S+?)\](?!\:)/g;
+export const footnoteContentRegex = /^\[\^(?<key>\S+?)\](?=\: +)/gm;
 
 export function buildFootnoteContentRegex(name: string) {
-  return new RegExp(`^\\[\\^${escapeForRegExp(name)}\\]\\: +(.*)$`, 'm');
+  return new RegExp(`^\\[\\^(?<key>${escapeForRegExp(name)})\\]\\: +(?<content>.*)$`, 'm');
+}
+
+export function buildFootnoteRefRegex(name: string) {
+  return new RegExp(`\\[\\^(?<key>${escapeForRegExp(name)})\\](?!\\:)`, 'mg');
 }
 
 export function matchAll(pattern: RegExp, text: string): Array<RegExpMatchArray> {

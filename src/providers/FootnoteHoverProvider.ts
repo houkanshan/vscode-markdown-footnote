@@ -7,8 +7,8 @@ export default class FootnoteHoverProvider implements vscode.HoverProvider {
       return null;
     }
 
-    const footnoteText = document.getText(range);
-    const footnoteName = footnoteText.slice(2, footnoteText.length - 1);
+    const footnoteRefText = document.getText(range);
+    const footnoteName = footnoteRefText.slice(2, footnoteRefText.length - 1);
 
     const contentRegex = buildFootnoteContentRegex(footnoteName);
     const match = document.getText().match(contentRegex);
@@ -17,6 +17,6 @@ export default class FootnoteHoverProvider implements vscode.HoverProvider {
       return null;
     }
 
-    return new vscode.Hover(match[1], range);
+    return new vscode.Hover(match.groups!.content, range);
   }
 }
