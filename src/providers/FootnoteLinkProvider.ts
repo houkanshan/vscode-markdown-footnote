@@ -7,10 +7,12 @@ const previewLength = 18;
 function getRefPreviewText(document: vscode.TextDocument, refRange: vscode.Range) {
   const start = new vscode.Position(
     refRange.start.line,
-    Math.max(0, refRange.start.character - previewLength));
+    Math.max(0, refRange.start.character - previewLength),
+  );
   const end = new vscode.Position(
     refRange.end.line,
-    Math.max(0, refRange.end.character + previewLength));
+    Math.max(0, refRange.end.character + previewLength),
+  );
   const text = document.getText(new vscode.Range(start, end));
   return `...${text}...`;
 }
@@ -33,7 +35,7 @@ export default class FootnoteLinkProvider implements vscode.DocumentLinkProvider
           refRange,
           createUriForRange(document, contentRange),
         );
-        refLink.tooltip = `${contentMatch[0]}:`;
+        refLink.tooltip = 'Go to';
         results.push(refLink);
 
         // Link of content -> ref
