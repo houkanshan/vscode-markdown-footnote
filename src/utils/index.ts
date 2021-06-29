@@ -1,5 +1,3 @@
-import * as vscode from 'vscode';
-
 export const escapeForRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 export const footnoteRefRegex = /\[\^(?<key>\S+?)\](?!\:)/g;
