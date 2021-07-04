@@ -12,21 +12,26 @@
 
 ## Features
 
-Hover to preview and jump between footnote reference and content by <kbd>cmd</kbd> / <kbd>ctrl</kbd> + <kbd>click</kbd>.
 
-![](assets/jump-between.gif)
+- Hover to preview and jump between footnote reference and content by <kbd>cmd</kbd> / <kbd>ctrl</kbd> + <kbd>click</kbd>.
 
-Command for inserting new footnote.
+  ![Hover preview](assets/hover.png)
 
-![](assets/insert-footnote.gif)
+- Peek editor for quick editing and preview.
 
-Create content for a footnote reference by <kbd>cmd</kbd> / <kbd>ctrl</kbd> + <kbd>click</kbd>.
+  ![Peek footnote content](assets/peek-content.png)
 
-![](assets/click-add-footnote.gif)
+  ![Peek footnote references](assets/peek-references.png)
 
-Render footnotes in the built-in markdown preview.
+- Command for inserting new footnote
 
-![](assets/preview.png)
+  ![Click to create a new footnote](assets/click-to-create.png)
+
+  ![Use command to insert a footnote](assets/command-to-insert.png)
+
+- Render footnotes in the built-in markdown preview.
+
+  ![Preview](assets/preview.png)
 
 ### TODO
 

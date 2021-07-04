@@ -5,6 +5,6 @@ export default function createRangeFromFootnoteMatch(
 ): vscode.Range {
   const offset = match.index || 0;
   const linkStart = document.positionAt(offset);
-  const linkEnd = document.positionAt(offset + match[1].length + 3);
+  const linkEnd = document.positionAt(offset + match.groups!.key.length + 3);
   return new vscode.Range(linkStart, linkEnd);
 }
