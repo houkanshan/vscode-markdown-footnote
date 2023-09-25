@@ -12,26 +12,27 @@
 
 ## Features
 
-
 - Hover to preview and jump between footnote reference and content by <kbd>cmd</kbd> / <kbd>ctrl</kbd> + <kbd>click</kbd>.
 
-  ![Hover preview](assets/hover.png)
+![Hover preview](assets/hover.png)
 
 - Peek editor for quick editing and preview.
 
-  ![Peek footnote content](assets/peek-content.png)
+![Peek footnote content](assets/peek-content.png)
 
-  ![Peek footnote references](assets/peek-references.png)
+![Peek footnote references](assets/peek-references.png)
 
 - Command for inserting new footnote
 
-  ![Click to create a new footnote](assets/click-to-create.png)
+![Click to create a new footnote](assets/click-to-create.png)
 
-  ![Use command to insert a footnote](assets/command-to-insert.png)
+![Use command to insert a footnote](assets/command-to-insert.png)
 
 - Render footnotes in the built-in markdown preview.
 
-  ![Preview](assets/preview.png)
+![Preview](assets/preview.png)
+
+- Rename footnotes directly in the editor.
 
 ### TODO
 
@@ -61,4 +62,5 @@
 
 ## Changelog
 
+- 20230925 新增脚注修改功能
 See changelog [here](./CHANGELOG.md).

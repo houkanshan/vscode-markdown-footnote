@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import { footnoteContentRegex, footnoteRefRegex } from '.';
 export default function createRangeFromFootnoteMatch(
   document: vscode.TextDocument,
   match: RegExpMatchArray,

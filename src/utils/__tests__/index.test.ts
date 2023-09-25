@@ -1,4 +1,5 @@
 // You can import and use all API from the 'vscode' module
+import { log } from 'console';
 import {
   matchAll,
   footnoteRefRegex,

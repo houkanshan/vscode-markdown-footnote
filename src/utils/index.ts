@@ -5,6 +5,7 @@ export const footnoteContentRegex = /^\[\^(?<key>\S+?)\](?=\: +)/gm;
 
 export function buildFootnoteContentRegex(name: string) {
   return new RegExp(`^\\[\\^(?<key>${escapeForRegExp(name)})\\]\\: +(?<content>.*)$`, 'm');
+  // return new RegExp(`^\\[\\^(?<key>${escapeForRegExp(name)})\\]\\: +(?<content>.*)$`, 'mg');
 }
 
 export function buildFootnoteRefRegex(name: string) {

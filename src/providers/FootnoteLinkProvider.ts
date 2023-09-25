@@ -22,14 +22,18 @@ export default class FootnoteLinkProvider implements vscode.DocumentLinkProvider
     const results: vscode.DocumentLink[] = [];
 
     // Scan document, create pairs of ref and content
+    // 扫描文档，创建引用和内容对
     const refContentPairs = createRefContentPairs(document);
 
     // Iterator pairs, create documentLink for jumping or insertion
+    // 迭代器对，创建用于跳转或插入的文档链接
     for (let [refMatch, contentMatch] of refContentPairs) {
+      // 生成ref的坐标
       const refRange = createRangeFromFootnoteMatch(document, refMatch);
 
       if (contentMatch) {
         // Link of ref -> content
+        // 生成content的坐标
         const contentRange = createRangeFromFootnoteMatch(document, contentMatch);
         const refLink = new vscode.DocumentLink(
           refRange,
@@ -40,6 +44,7 @@ export default class FootnoteLinkProvider implements vscode.DocumentLinkProvider
 
         // Link of content -> ref
         // NOTE: there could be multiple links to difference ref on one content.
+        // 注意：可能有多个链接指向同一内容上的不同参考。
         const contentLink = new vscode.DocumentLink(
           contentRange,
           createUriForRange(document, refRange),
