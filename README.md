@@ -3,62 +3,36 @@
 </p>
 <h1 align="center" style="margin-top: 0">VSCode Markdown Footnote</h1>
 
-[![](https://vsmarketplacebadge.apphb.com/version-short/houkanshan.vscode-markdown-footnote.svg)](https://marketplace.visualstudio.com/items?itemName=houkanshan.vscode-markdown-footnote)
-[![](https://vsmarketplacebadge.apphb.com/installs/houkanshan.vscode-markdown-footnote.svg)](https://marketplace.visualstudio.com/items?itemName=houkanshan.vscode-markdown-footnote)
-[![](https://vsmarketplacebadge.apphb.com/rating-short/houkanshan.vscode-markdown-footnote.svg)](https://marketplace.visualstudio.com/items?itemName=houkanshan.vscode-markdown-footnote&ssr=false#review-details)
-[![](https://github.com/houkanshan/vscode-markdown-footnote/workflows/CI/badge.svg?branch=master)](https://github.com/houkanshan/vscode-markdown-footnote/actions?query=workflow%3ACI+branch%3Amaster)
-
 `[^1]` [footnote syntax](https://www.markdownguide.org/extended-syntax/#footnotes) support to VS Code's Markdown editor and preview.
 
-## Features
+## 功能
 
+* 通过 <kbd>cmd</kbd> / <kbd>ctrl</kbd> + <kbd>click</kbd> 可以悬停以预览并在脚注引用和内容之间跳转。
 
-- Hover to preview and jump between footnote reference and content by <kbd>cmd</kbd> / <kbd>ctrl</kbd> + <kbd>click</kbd>.
+![悬停预览](assets/hover.png)
 
-  ![Hover preview](assets/hover.png)
+* 提供编辑和预览的 Peek 编辑器功能。
 
-- Peek editor for quick editing and preview.
+![查看脚注内容](assets/peek-content.png)
 
-  ![Peek footnote content](assets/peek-content.png)
+![查看脚注引用](assets/peek-references.png)
 
-  ![Peek footnote references](assets/peek-references.png)
+* 提供插入新脚注的命令。
 
-- Command for inserting new footnote
+![点击创建新脚注](assets/click-to-create.png)
 
-  ![Click to create a new footnote](assets/click-to-create.png)
+![使用命令插入脚注](assets/command-to-insert.png)
 
-  ![Use command to insert a footnote](assets/command-to-insert.png)
+* 在内置的 Markdown 预览中呈现脚注。
 
-- Render footnotes in the built-in markdown preview.
+![预览](assets/preview.png)
 
-  ![Preview](assets/preview.png)
+* 直接在编辑器中重命名脚注。
 
-### TODO
+![重命名脚注](assets/rename.png)
 
-- Support multiline footnote content.
-- Support `pandoc-citeproc` format [citations](https://crsh.github.io/papaja_man/writing.html#citations)
-
-## Contributing
-
-- File bugs, feature requests in [GitHub Issues](https://github.com/houkanshan/vscode-markdown-footnote/issues).
-- Leave a review on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=houkanshan.vscode-markdown-footnote&ssr=false#review-details).
-
-### Dev
-
-- Fork this repository
-- `npm install`
-- Create your feature branch: `git checkout -b my-new-feature`
-- Make changes and add tests
-- `npm test:watch` and check your changes by pressing `F5`
-- Commit your changes: `git commit -am 'feat: Add some feature'`
-- Push to the branch: `git push origin my-new-feature`
-- Submit a pull request
-
-## Thanks
-
-- [Markdown Footnotes](https://github.com/mjbvz/vscode-markdown-footnotes)
-- [Markdown Memo](https://github.com/svsool/vscode-memo)
+注：该插件基于原插件更新[vscode-markdown-footnote](https://github.com/houkanshan/vscode-markdown-footnote)
 
 ## Changelog
 
-See changelog [here](./CHANGELOG.md).
+* 231006 更新 V1.1.0 增加脚注修改功能

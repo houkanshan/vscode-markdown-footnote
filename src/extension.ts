@@ -5,6 +5,7 @@ import FootnoteLinkProvider from './providers/FootnoteLinkProvider';
 import FootnoteHoverProvider from './providers/FootnoteHoverProvider';
 import FootnoteReferenceProvider from './providers/FootnoteReferenceProvider';
 import FootnoteDefinitionProvider from './providers/FootnoteDefinitionProvider';
+import FootnoteRenameProvider from './providers/FootnoteRenameProvider';
 import peek from './commands/peek';
 // import FootnoteDeclarationProvider from './providers/FootnoteDeclarationProvider';
 
@@ -19,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
     vscode.languages.registerDocumentLinkProvider(mdLangSelector, new FootnoteLinkProvider()),
     vscode.languages.registerDefinitionProvider(mdLangSelector, new FootnoteDefinitionProvider()),
     vscode.languages.registerReferenceProvider(mdLangSelector, new FootnoteReferenceProvider()),
-
+    vscode.languages.registerRenameProvider(mdLangSelector, new FootnoteRenameProvider()),
     // NOTE: Not sure what's the difference between declaration and definition.
     // vscode.languages.registerDeclarationProvider(mdLangSelector, new FootnoteDeclarationProvider()),
   );
