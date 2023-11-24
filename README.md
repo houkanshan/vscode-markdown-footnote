@@ -8,12 +8,13 @@
 [![](https://vsmarketplacebadge.apphb.com/rating-short/houkanshan.vscode-markdown-footnote.svg)](https://marketplace.visualstudio.com/items?itemName=houkanshan.vscode-markdown-footnote&ssr=false#review-details)
 [![](https://github.com/houkanshan/vscode-markdown-footnote/workflows/CI/badge.svg?branch=master)](https://github.com/houkanshan/vscode-markdown-footnote/actions?query=workflow%3ACI+branch%3Amaster)
 
-`[^1]` [footnote syntax](https://www.markdownguide.org/extended-syntax/#footnotes) support to VS Code's Markdown editor and preview.
+`[^1]` [footnote syntax](https://www.markdownguide.org/extended-syntax/#footnotes) support for VS Code's Markdown editor and preview.
+
+This is a fork of [Mai Hou's Markdown Footnote](https://github.com/houkanshan/vscode-markdown-footnote), with the added feature of supporting multiline footnote content.
 
 ## Features
 
-
-- Hover to preview and jump between footnote reference and content by <kbd>cmd</kbd> / <kbd>ctrl</kbd> + <kbd>click</kbd>.
+- Hover to preview and jump between footnote reference and content with <kbd>cmd</kbd> / <kbd>ctrl</kbd> + <kbd>click</kbd>.
 
   ![Hover preview](assets/hover.png)
 
@@ -23,7 +24,7 @@
 
   ![Peek footnote references](assets/peek-references.png)
 
-- Command for inserting new footnote
+- Command for inserting a new footnote.
 
   ![Click to create a new footnote](assets/click-to-create.png)
 
@@ -35,7 +36,6 @@
 
 ### TODO
 
-- Support multiline footnote content.
 - Support `pandoc-citeproc` format [citations](https://crsh.github.io/papaja_man/writing.html#citations)
 
 ## Contributing

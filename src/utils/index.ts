@@ -1,7 +1,7 @@
 export const escapeForRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 export const footnoteRefRegex = /\[\^(?<key>\S+?)\](?!\:)/g;
-export const footnoteContentRegex = /^\[\^(?<key>\S+?)\](?=\: +)/gm;
+export const footnoteContentRegex = /^\[\^(?<key>\S+?)\](?=\:( +|$))/gm;
 
 export function buildFootnoteContentRegex(name: string) {
   return new RegExp(`^\\[\\^(?<key>${escapeForRegExp(name)})\\]\\: +(?<content>.*)$`, 'm');
