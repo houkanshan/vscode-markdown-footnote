@@ -1,50 +1,37 @@
 {
-  "name": "vscode-markdown-footnote",
+  "name": "markdown-footnote",
   "displayName": "Markdown Footnote",
-  "publisher": "houkanshan",
-  "description": "Support markdown footnote in VSCode editor",
-  "version": "1.0.0",
+  "publisher": "heckman",
+  "description": "Supports markdown footnotes in both editor and preview",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.57.0"
   },
-  "author": "Mai Hou <houkanshan@gmail.com>",
+  "author": "Erik Ben Heckman <erik@heckman.ca>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/houkanshan/vscode-markdown-footnote"
+    "url": "https://github.com/heckman/markdown-footnote"
   },
   "bugs": {
-    "url": "https://github.com/houkanshan/vscode-markdown-footnote/issues"
+    "url": "https://github.com/heckman/markdown-footnote/issues"
   },
   "icon": "assets/markdown-footnote.png",
-  "keywords": [
-    "markdown",
-    "footnote",
-    "footnotes",
-    "preview",
-    "notes",
-    "note taking"
-  ],
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onLanguage:markdown"
-  ],
+  "keywords": ["markdown", "footnote", "footnotes", "preview", "notes", "note taking"],
+  "categories": ["Other"],
+  "activationEvents": ["onLanguage:markdown"],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "vscode-markdown-footnote.insertFootnote",
+        "command": "markdown-footnote.insertFootnote",
         "title": "Insert a Footnote"
       }
     ],
     "markdown.markdownItPlugins": true
   },
   "lint-staged": {
-    "*.ts": [
-      "eslint --fix"
-    ]
+    "*.ts": ["eslint --fix"]
   },
   "scripts": {
     "lint": "eslint src --ext ts",

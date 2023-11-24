@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.1.0 - November 24, 2023
+
+- Added: Support multiline footnote content.
+
 ## 1.0.0 - June 25, 2021
 
 - Added: Support definition and reference.
